@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday Trip 2026</title>
+    <!-- Google Fonts: 上品な日本語明朝体と洗練された英字フォント -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --main-gold: #c5a880;
+            --dark-bronze: #4a3e3d;
+            --bg-cream: #faf7f2;
+            --card-white: #ffffff;
+            --accent-pink: #e6b8af;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Serif JP', serif;
+            background-color: var(--bg-cream);
+            color: var(--dark-bronze);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* 華やかなヘッダー */
+        header {
+            text-align: center;
+            padding: 50px 20px 40px;
+            background: linear-gradient(to bottom, #fff, var(--bg-cream));
+            position: relative;
+        }
+        .header-en {
+            font-family: 'Cinzel', serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.3em;
+            color: var(--main-gold);
+            margin: 0 0 10px 0;
+        }
+        h1 {
+            font-size: 1.6rem;
+            margin: 0 0 15px 0;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+        }
+        .header-date {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.1em;
+            display: inline-block;
+            border-bottom: 1px solid var(--main-gold);
+            padding-bottom: 5px;
+            margin: 0;
+        }
+
+        /* メインビジュアル */
+        .hero-container {
+            padding: 0 20px;
+            margin-bottom: 30px;
+        }
+        .hero-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(74, 62, 61, 0.06);
+        }
+
+        /* コンテンツコンテナ */
+        .container {
+            padding: 0 20px 60px;
+        }
+
+        /* 日程カード */
+        .day-section {
+            background-color: var(--card-white);
+            border-radius: 20px;
+            padding: 25px 20px;
+            margin-bottom: 35px;
+            box-shadow: 0 10px 30px rgba(74, 62, 61, 0.04);
+            border: 1px solid rgba(197, 168, 128, 0.15);
+        }
+
+        /* DAYタイトル */
+        .day-header {
+            margin-bottom: 25px;
+            border-bottom: 1px dashed var(--main-gold);
+            padding-bottom: 15px;
+        }
+        .day-number {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--main-gold);
+            margin: 0;
+        }
+        .day-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 5px 0 10px 0;
+        }
+        .day-theme {
+            font-size: 0.85rem;
+            background-color: #f3ede4;
+            padding: 6px 12px;
+            border-radius: 6px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        /* タイムライン */
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 10px;
+            bottom: 10px;
+            width: 1px;
+            background-color: var(--main-gold);
+            opacity: 0.4;
+        }
+        .timeline li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 30px;
+        }
+        .timeline li:last-child {
+            margin-bottom: 10px;
+        }
+        .timeline li::before {
+            content: '';
+            position: absolute;
+            left: 3px;
+            top: 8px;
+            width: 9px;
+            height: 9px;
+            background-color: var(--main-gold);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* 時間とスポット */
+        .spot-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .time-badge {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--main-gold);
+            background-color: #fff;
+            padding: 0 4px;
+            margin-right: 10px;
+        }
+        .spot-name {
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+
+        /* 説明テキスト */
+        .spot-desc {
+            font-size: 0.9rem;
+            margin: 0 0 12px 0;
+            text-align: justify;
+        }
+
+        /* 写真ギャラリー */
+        .spot-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .spot-gallery img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #eee;
+        }
+        .spot-gallery.single-img {
+            grid-template-columns: 1fr;
+        }
+        .spot-gallery.single-img img {
+            height: 140px;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.8rem;
+            color: var(--main-gold);
+            background-color: #fff;
+            letter-spacing: 0.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="header-en">HAPPY BIRTHDAY TO WIFE</p>
+        <h1>富士と八ヶ岳を巡る、家族旅</h1>
+        <p class="header-date">2026.07.18 - 07.20</p>
+    </header>
+
+    <div class="hero-container">
+        <img src="main-fuji.jpg" alt="旅のメインイメージ" class="hero-img">
+    </div>
+
+    <div class="container">
+
+        <!-- ==================== DAY 1 ==================== -->
+        <div class="day-section">
+            <div class="day-header">
+                <p class="day-number">DAY 1</p>
+                <h2 class="day-title">7月18日（土）富士山と河口湖 満喫day</h2>
+                <div class="day-theme">💡 早起きは三文の徳！おいしい朝ごはんと広々公園でのんびり</div>
+            </div>
+            
+            <ul class="timeline">
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">05:30</span>
+                        <span class="spot-name">🚗 鷺ノ宮を出発！</span>
+                    </div>
+                    <p class="spot-desc">娘ちゃんはパジャマのまま車へ乗せちゃいましょう。車内で二度寝してくれれば大成功！渋滞前の中央道をスイスイ進みます。</p>
+                </li>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">07:15</span>
+                        <span class="spot-name">🍙 「富士茶庵」で朝ごはん</span>
+                    </div>
+                    <p class="spot-desc">朝7時から開いている絶品おにぎり屋さん。炊きたてホカホカのおにぎりは2歳ちゃんも大好物！パパママも朝から元気チャージ完了です。</p>
+                    <div class="spot-gallery single-img">
+                        <img src="breakfast.jpg" alt="富士茶庵のおにぎり">
+                    </div>
+                </li>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">09:00</span>
+                        <span class="spot-name">🌸 「大石公園」をお散歩</span>
+                    </div>
+                    <p class="spot-desc">富士山が目の前にドーンと見える絶景公園。夏はラベンダーがとっても綺麗！フラットな遊歩道なので、ベビーカーでも、よちよち歩きでも安心して楽しめます。</p>
+                    <div class="spot-gallery single-img">
+                        <img src="park.jpg" alt="大石公園のラベンダー">
+                    </div>
+                </li>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">10:30</span>
+                        <span class="spot-name">🌲 「富士すばるランド」で遊ぶ</span>
+                    </div>
+                    <p class="spot-desc">森の中にある幼児向けのテーマパーク。2歳でも乗れる「赤ちゃんSL」や、可愛いワンちゃんたちと触れ合えるエリアで、娘ちゃんの体力を楽しく発散！</p>
+                </li>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">13:00</span>
+                        <span class="spot-name">🍜 ほうとうランチ ➔ お昼寝</span>
+                    </div>
+                    <p class="spot-desc">お昼は山梨名物「ほうとう」。麺が太くて柔らかく、かぼちゃの優しい味はお子様にぴったり。お腹がいっぱいになったら八ヶ岳方面へドライブ。娘ちゃんは車内でスヤスヤお昼寝タイム。</p>
+                </li>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">15:00</span>
+                        <span class="spot-name">♨️ 「大池ホテル」にチェックイン！</span>
+                    </div>
+                    <p class="spot-desc">子連れに大人気の温泉宿。滑り台やプラレールがある広いキッズルームへ直行！パパママも、貸切露天風呂で周りを気にせず、ゆっくり温泉で旅の疲れを癒やしてくださいね。</p>
+                    <div class="spot-gallery">
+                        <img src="hotel1-kids.jpg" alt="大池ホテル キッズルーム">
+                        <img src="hotel1-onsen.jpg" alt="大池ホテル 温泉">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ==================== DAY 2 ==================== -->
+        <div class="day-section">
+            <div class="day-header">
+                <p class="day-number">DAY 2</p>
+                <h2 class="day-title">7月19日（日）河口湖から八ヶ岳へ移動day</h2>
+                <div class="day-theme">💡 ロープウェイで空中散歩＆至れり尽くせりの贅沢宿へ</div>
+            </div>
+            
+            <ul class="timeline">
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">09:30</span>
+                        <span class="spot-name">🚠 「富士山パノラマロープウェイ」</span>
+                    </div>
+                    <p class="spot-desc">カチカチ山の舞台へ！ロープウェイに動く景色に娘ちゃんも釘付け。山頂には可愛いたぬきやうさぎのオブジェがあり、絶好のフォトスポットです。</p>
+                </li>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">11:30</span>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">11:30</span>
+                        <span class="spot-name">🚗 八ヶ岳（小淵沢）へ移動</span>
+                    </div>
+                    <p class="spot-desc">車で約1時間。ちょうどお昼寝の時間に重なると、車内が静かでスムーズに移動できます。</p>
+                </li>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">12:30</span>
+                        <span class="spot-name">🥗 「道の駅 こぶちさわ」でランチ</span>
+                    </div>
+                    <p class="spot-desc">イタリアンや山のパン屋さんが入っていて、子連れで入りやすいテラス席もあります。</p>
+                </li>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">15:00</span>
+                        <span class="spot-name">🐐 「八ヶ岳ホテル 風か」にチェックイン！</span>
+                    </div>
+                    <p class="spot-desc">お財布要らずのオールインクルーシブ宿。ここからは大人の癒やし時間もスタート！15:00〜16:30のウエルカム特典をフル活用：</p>
+                    <p class="spot-desc" style="font-size:0.85rem; padding-left:10px; border-left:2px solid var(--accent-pink); margin-left: 5px;">
+                        🍕 焼きたてのウェルカムピザをみんなでパクリ！<br>
+                        🍷 大人はビールやサングリア、娘ちゃんはジュースが飲み放題。<br>
+                        🐐 お庭で可愛い看板ヤギさんにおやつをあげるお散歩体験。<br>
+                        🍬 駄菓子がもらえる「宝探しゲーム」や、おもちゃいっぱいのキッズルームへ！
+                    </p>
+                    <div class="spot-gallery">
+                        <img src="hotel2-pizza.jpg" alt="ウェルカムピザ">
+                        <img src="hotel2-yagi.jpg" alt="看板ヤギさん">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ==================== DAY 3 ==================== -->
+        <div class="day-section">
+            <div class="day-header">
+                <p class="day-number">DAY 3</p>
+                <h2 class="day-title">7月20日（月）高原の動物とふれあい ➔ 帰路へ</h2>
+                <div class="day-theme">💡 牧場で動物さんと仲良くなってからおうちに帰ろう</div>
+            </div>
+            
+            <ul class="timeline">
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">10:00</span>
+                        <span class="spot-name">🍦 牧場へ出発！</span>
+                    </div>
+                    <p class="spot-desc">「まきば公園」または「滝沢牧場」へ！八ヶ岳の広大な緑の芝生の上を思いっきりダッシュ！羊や牛を間近で見たり、しぼりたての超濃厚なソフトクリームをみんなで食べましょう。</p>
+                    <div class="spot-gallery single-img">
+                        <img src="farm.jpg" alt="牧場のイメージ">
+                    </div>
+                </li>
+                <li>
+                    <div class="spot-meta">
+                        <span class="time-badge">13:00</span>
+                        <span class="spot-name">🚗 早めに東京へ向けて出発！</span>
+                    </div>
+                    <p class="spot-desc">夏休み期間の平日は、夕方から中央道（上り）が混むことがあります。13:00過ぎに現地を出れば、娘ちゃんは車内でぐっすり夢の中。渋滞を綺麗に回避して、16:00前には鷺ノ宮の我が家に到着できます。</p>
+                </li>
+            </ul>
+        </div>
+
+    </div> <!-- containerの閉じタグ -->
+
+    <footer>
+        HAPPY BIRTHDAY TRIP 2026
+    </footer>
+
+</body>
+</html>
