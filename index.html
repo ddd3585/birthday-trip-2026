@@ -3,116 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎂 Happy Birthday Trip 2026</title>
-    <!-- Google Fonts: 上品な日本語明朝体と洗練された英字フォント -->
+    <title>🎂 山梨アクティブツアー 2026</title>
+    <!-- Google Fonts: ポップで可愛い丸ゴシック体フォント -->
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
         :root {
-            --main-gold: #c5a880;
-            --dark-bronze: #4a3e3d;
-            --bg-cream: #faf7f2;
+            --main-orange: #ff9f1c; /* 元気でポップなオレンジ */
+            --accent-green: #2ec4b6; /* 爽やかなミントグリーン */
+            --dark-brown: #5c4d4d; /* 読みやすい優しいブラウン */
+            --bg-yellow: #fffdf6; /* ほんのり温かみのある背景 */
             --card-white: #ffffff;
-            --accent-pink: #e6b8af;
+            --badge-pink: #ffbfb7;
         }
 
         * { box-sizing: border-box; }
 
         body {
-            font-family: 'Noto Serif JP', serif;
-            background-color: var(--bg-cream);
-            color: var(--dark-bronze);
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            background-color: var(--bg-yellow);
+            color: var(--dark-brown);
             margin: 0;
             padding: 0;
-            line-height: 1.8;
+            line-height: 1.7;
             -webkit-text-size-adjust: 100%;
         }
 
-        /* 華やかなヘッダー */
+        /* ポップで賑やかなヘッダー */
         header {
             text-align: center;
-            padding: 50px 20px 40px;
-            background: linear-gradient(to bottom, #fff, var(--bg-cream));
+            padding: 45px 20px 35px;
+            background: linear-gradient(to bottom, #fff, var(--bg-yellow));
             position: relative;
         }
         .header-en {
-            font-family: 'Cinzel', serif;
-            font-size: 0.85rem;
-            letter-spacing: 0.3em;
-            color: var(--main-gold);
-            margin: 0 0 10px 0;
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            color: var(--main-orange);
+            font-weight: 800;
+            margin: 0 0 8px 0;
         }
         h1 {
-            font-size: 1.6rem;
-            margin: 0 0 15px 0;
-            letter-spacing: 0.05em;
-            font-weight: 700;
+            font-size: 1.7rem;
+            margin: 0 0 12px 0;
+            font-weight: 800;
+            color: var(--dark-brown);
+            text-shadow: 2px 2px 0px rgba(255, 159, 28, 0.15);
         }
         .header-date {
-            font-family: 'Cinzel', serif;
-            font-size: 1.1rem;
-            letter-spacing: 0.1em;
+            font-size: 1rem;
+            font-weight: 700;
+            background-color: var(--main-orange);
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 20px;
             display: inline-block;
-            border-bottom: 1px solid var(--main-gold);
-            padding-bottom: 5px;
             margin: 0;
         }
 
         /* メインビジュアル */
         .hero-container {
             padding: 0 20px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         .hero-img {
             width: 100%;
             height: 220px;
             object-fit: cover;
-            border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(74, 62, 61, 0.06);
+            border-radius: 24px; /* 丸みを強めてポップに */
+            border: 4px solid #fff;
+            box-shadow: 0 8px 20px rgba(92, 77, 77, 0.08);
         }
 
         /* コンテンツコンテナ */
         .container {
-            padding: 0 20px 60px;
+            padding: 0 15px 60px;
         }
 
         /* 日程カード */
         .day-section {
             background-color: var(--card-white);
-            border-radius: 20px;
-            padding: 25px 20px;
-            margin-bottom: 35px;
-            box-shadow: 0 10px 30px rgba(74, 62, 61, 0.04);
-            border: 1px solid rgba(197, 168, 128, 0.15);
+            border-radius: 24px;
+            padding: 25px 18px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 24px rgba(92, 77, 77, 0.05);
+            border: 2px solid #f7f1e5;
         }
 
         /* DAYタイトル */
         .day-header {
-            margin-bottom: 25px;
-            border-bottom: 1px dashed var(--main-gold);
-            padding-bottom: 15px;
+            margin-bottom: 20px;
+            border-bottom: 3px dashed var(--main-orange);
+            padding-bottom: 12px;
         }
         .day-number {
-            font-family: 'Cinzel', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--main-gold);
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--main-orange);
             margin: 0;
+            line-height: 1.2;
         }
         .day-title {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             font-weight: 700;
-            margin: 5px 0 10px 0;
+            margin: 3px 0 10px 0;
         }
         .day-theme {
             font-size: 0.85rem;
-            background-color: #f3ede4;
-            padding: 6px 12px;
-            border-radius: 6px;
-            display: inline-block;
-            font-weight: bold;
+            background-color: #fff3e0;
+            padding: 8px 12px;
+            border-radius: 12px;
+            display: block;
+            font-weight: 700;
+            border-left: 4px solid var(--main-orange);
         }
 
-        /* タイムライン */
+        /* ポップなタイムライン */
         .timeline {
             list-style: none;
             padding: 0;
@@ -122,30 +127,29 @@
         .timeline::before {
             content: '';
             position: absolute;
-            left: 7px;
-            top: 10px;
-            bottom: 10px;
-            width: 1px;
-            background-color: var(--main-gold);
-            opacity: 0.4;
+            left: 12px;
+            top: 15px;
+            bottom: 15px;
+            width: 4px;
+            background-color: #f7f1e5;
+            border-radius: 2px;
         }
         .timeline li {
             position: relative;
-            padding-left: 28px;
-            margin-bottom: 30px;
+            padding-left: 32px;
+            margin-bottom: 25px;
         }
         .timeline li:last-child {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
+        /* ドットをカラフル＆大きく */
         .timeline li::before {
-            content: '';
+            content: '★';
             position: absolute;
-            left: 3px;
-            top: 8px;
-            width: 9px;
-            height: 9px;
-            background-color: var(--main-gold);
-            border-radius: 50%;
+            left: 2px;
+            top: 3px;
+            font-size: 14px;
+            color: var(--accent-green);
             z-index: 1;
         }
 
@@ -153,16 +157,17 @@
         .spot-meta {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             margin-bottom: 5px;
         }
         .time-badge {
-            font-family: 'Cinzel', serif;
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--main-gold);
-            background-color: #fff;
-            padding: 0 4px;
-            margin-right: 10px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #fff;
+            background-color: var(--accent-green);
+            padding: 2px 8px;
+            border-radius: 8px;
+            margin-right: 8px;
         }
         .spot-name {
             font-size: 1.05rem;
@@ -172,8 +177,7 @@
         /* 説明テキスト */
         .spot-desc {
             font-size: 0.9rem;
-            margin: 0 0 12px 0;
-            text-align: justify;
+            margin: 0 0 10px 0;
         }
 
         /* 写真ギャラリー */
@@ -181,14 +185,16 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 8px;
-            margin-top: 10px;
+            margin-top: 8px;
         }
         .spot-gallery img {
             width: 100%;
             height: 100px;
             object-fit: cover;
-            border-radius: 8px;
-            background-color: #eee;
+            border-radius: 12px;
+            background-color: #f0f0f0;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
         .spot-gallery.single-img {
             grid-template-columns: 1fr;
@@ -201,18 +207,19 @@
         footer {
             text-align: center;
             padding: 40px 20px;
-            font-size: 0.8rem;
-            color: var(--main-gold);
-            background-color: #fff;
-            letter-spacing: 0.1em;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #fff;
+            background-color: var(--main-orange);
+            border-radius: 20px 20px 0 0;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <p class="header-en">HAPPY BIRTHDAY TO WIFE</p>
-        <h1>富士と八ヶ岳を巡る、家族旅</h1>
+        <p class="header-en">🎉 HAPPY BIRTHDAY TRIP 🎉</p>
+        <h1>🎂 山梨アクティブツアー</h1>
         <p class="header-date">2026.07.18 - 07.20</p>
     </header>
 
@@ -227,7 +234,7 @@
             <div class="day-header">
                 <p class="day-number">DAY 1</p>
                 <h2 class="day-title">7月18日（土）富士山と河口湖 満喫day</h2>
-                <div class="day-theme">💡 早起きは三文の徳！おいしい朝ごはんと広々公園でのんびり</div>
+                <div class="day-theme">☀️ 早起きは三文の徳！おいしい朝ごはんと広々公園でのんびり</div>
             </div>
             
             <ul class="timeline">
@@ -245,7 +252,7 @@
                     </div>
                     <p class="spot-desc">朝7時から開いている絶品おにぎり屋さん。炊きたてホカホカのおにぎりは2歳ちゃんも大好物！パパママも朝から元気チャージ完了です。</p>
                     <div class="spot-gallery single-img">
-                        <img src="breakfast.jpg" alt="富士茶庵のおにぎり">
+                        <img src="breakfast.jpg" alt="富士茶庵のおおにぎり">
                     </div>
                 </li>
                 <li>
@@ -285,13 +292,12 @@
                 </li>
             </ul>
         </div>
-
         <!-- ==================== DAY 2 ==================== -->
         <div class="day-section">
             <div class="day-header">
                 <p class="day-number">DAY 2</p>
                 <h2 class="day-title">7月19日（日）河口湖から八ヶ岳へ移動day</h2>
-                <div class="day-theme">💡 ロープウェイで空中散歩＆至れり尽くせりの贅沢宿へ</div>
+                <div class="day-theme">🎈 ロープウェイで空中散歩＆至れり尽くせりの贅沢宿へ</div>
             </div>
             
             <ul class="timeline">
@@ -302,9 +308,6 @@
                     </div>
                     <p class="spot-desc">カチカチ山の舞台へ！ロープウェイに動く景色に娘ちゃんも釘付け。山頂には可愛いたぬきやうさぎのオブジェがあり、絶好のフォトスポットです。</p>
                 </li>
-                <li>
-                    <div class="spot-meta">
-                        <span class="time-badge">11:30</span>
                 <li>
                     <div class="spot-meta">
                         <span class="time-badge">11:30</span>
@@ -325,7 +328,7 @@
                         <span class="spot-name">🐐 「八ヶ岳ホテル 風か」にチェックイン！</span>
                     </div>
                     <p class="spot-desc">お財布要らずのオールインクルーシブ宿。ここからは大人の癒やし時間もスタート！15:00〜16:30のウエルカム特典をフル活用：</p>
-                    <p class="spot-desc" style="font-size:0.85rem; padding-left:10px; border-left:2px solid var(--accent-pink); margin-left: 5px;">
+                    <p class="spot-desc" style="font-size:0.85rem; padding: 10px 12px; background-color: #fff0ee; border-radius: 12px; margin-top: 5px;">
                         🍕 焼きたてのウェルカムピザをみんなでパクリ！<br>
                         🍷 大人はビールやサングリア、娘ちゃんはジュースが飲み放題。<br>
                         🐐 お庭で可愛い看板ヤギさんにおやつをあげるお散歩体験。<br>
@@ -344,7 +347,7 @@
             <div class="day-header">
                 <p class="day-number">DAY 3</p>
                 <h2 class="day-title">7月20日（月）高原の動物とふれあい ➔ 帰路へ</h2>
-                <div class="day-theme">💡 牧場で動物さんと仲良くなってからおうちに帰ろう</div>
+                <div class="day-theme">🍦 牧場で動物さんと仲良くなってからおうちに帰ろう</div>
             </div>
             
             <ul class="timeline">
@@ -371,7 +374,7 @@
     </div> <!-- containerの閉じタグ -->
 
     <footer>
-        HAPPY BIRTHDAY TRIP 2026
+        🎈 YAMANASHI ACTIVE TOUR 2026 🎈
     </footer>
 
 </body>
